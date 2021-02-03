@@ -1,0 +1,99 @@
+@media all and(max-width: 992px) {
+	header img.dish {
+		left: -1px;
+	}
+}
+
+@media all and (max-width: 770px) {
+	.container {
+		width: 90%;
+	}
+	header .heading h1 {
+		font-size: 3em;
+		text-align: center;
+	}
+	header .booking .content {
+		text-align: center;
+	}
+	header img.dish {
+		display: none;
+	}
+	header #menu-icon {
+		display: initial;
+		color: #fff;
+	}
+	nav:not(.active) #nav-menu {
+		transform: translateX(100%);
+	}
+	.navbar ul {
+		position: absolute;
+		z-index: 5;
+		display: flex;
+		/* justify-content: space-between; */
+		/* align-items: flex-end; */
+		flex-direction: column;
+		top: 55px;
+		right: 0;
+		background-color: rgba(0, 0, 0, 0.7);
+		width: 50%;
+		text-align: center;
+		transition: all 0.3s ease-in-out;
+	}
+	.navbar ul li {
+		padding: 10px;
+		margin: 0;
+		display: inline-block;
+		width: 100%;
+		transition: all 0.3s ease;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	}
+	.navbar ul li:hover a,
+	.navbar ul li:active a {
+		color: rgba(255, 255, 255, 0.8);
+	}
+
+	#shop {
+		margin-top: 0;
+	}
+	#shop .all-content {
+		flex-direction: column;
+		text-align: center;
+		gap: 1rem;
+		margin: auto;
+	}
+	#shop .all-content article.content {
+		width: 100%;
+	}
+	#shop .all-content .video-content {
+		align-self: center;
+	}
+
+	#contact article .all-content {
+		padding: 50px 0 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		text-align: center;
+	}
+	#contact article .all-content p {
+		width: 100%;
+	}
+	#contact h2 {
+		padding: 0 5px;
+	}
+
+	footer ul {
+		flex-wrap: wrap;
+		gap: 1rem;
+		justify-content: space-around;
+		width: 100%;
+	}
+	footer ul li {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+		padding-bottom: 5px;
+	}
+	footer ul li:not(:last-child):after {
+		border-right: none;
+	}
+}
