@@ -1,4 +1,4 @@
-# ResturaThe Nizam's
+# The Nizam's
 Fully Responsive web Site .
 
 Tech Stack used - 
